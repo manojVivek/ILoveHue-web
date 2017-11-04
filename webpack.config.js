@@ -6,7 +6,8 @@ module.exports = {
   entry: "./app",
   output: {
     path: __dirname + "/dist",
-    filename: "bundle.js"
+    filename: "bundle.js",
+    publicPath: '/dist/'
   },
   module: {
     loaders: [
@@ -33,11 +34,6 @@ module.exports = {
     contentBase: path.resolve(__dirname),
     hot: true,
     inline: true,
-    historyApiFallback: false
+    historyApiFallback: false,
   },
-  /*resolve: {
-    alias: {
-      'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
-    }
-  }*/
 }
