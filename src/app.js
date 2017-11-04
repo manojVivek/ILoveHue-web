@@ -13,7 +13,7 @@ window.onload = function () {
   setTimeout(function(){
     new Vue({
       el: '#app',
-      template:'<grid :height="12" :width="12"></grid>',
+      template:'<grid :height="13" :width="13"></grid>',
       components: {grid},
     });
   }, 0);
